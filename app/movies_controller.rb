@@ -6,7 +6,7 @@
 # end                              # end
 
 def can_be_instantiated_and_then_saved
-  movie = movie.new
+  movie = Movie.new
   movie.title = "This is a title."
   movie.save
 end
@@ -47,7 +47,7 @@ def can_get_size_of_the_database
 end
 
 def can_find_the_first_item_from_the_database_using_id
-  Movie.fine(1)
+  Movie.find(1)
 end
 
 def can_find_by_multiple_attributes
